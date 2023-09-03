@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="container" style="width: 50vw;" >
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Nhập vào các số nguyên (dùng khoảng trắng để ngăn cách giữa các số) : </label>
+          <input type="email" class="form-control" id="mang" aria-describedby="emailHelp">
+          <h6 class="mt-3">Vui lòng chọn chức năng: </h6>
+          <div class="input">
+            <label for="selected" >1. Tổng các số trong mảng </label>
+            <input type="radio" value="1" name="selected">
+          </div>
+
+          <div class="input">
+            <label for="selected">2. Đếm số dương trong mảng </label>
+            <input type="radio" value="2" name="selected">
+          </div>
+
+
+          <div class="input">
+            <label for="selected">3. Tìm số nhỏ nhất trong mảng </label>
+            <input type="radio" value="3" name="selected">
+          </div>
+
+          <div class="input">
+            <label for="selected">4. Tìm số dương nhỏ nhất trong mảng </label>
+            <input type="radio" value="4" name="selected">
+          </div>
+
+          <div class="input">
+            <label for="selected">5. Tìm số chẵn cuối cùng trong mảng </label>
+            <input type="radio" value="5" name="selected">
+          </div>
+
+          <div class="input">
+            <label for="selected" >6. Đổi chỗ 2 giá trị trong mảng theo vị trí </label>
+            <input type="radio" value="6" name="selected" onchange="handleChange()">
+          </div>
+          <div id="c6" class="hide">
+            <label for="value1">Nhập vị trí thứ nhất :</label>
+            <input id="value1" type="text">
+            <label for="value1">Nhập vị trí thứ hai :</label>
+            <input id="value2" type="text">
+        </div>
+
+          <div class="input">
+            <label for="selected">7. Sắp xếp mảng theo thứ tự tăng dần </label>  
+            <input type="radio" value="7" name="selected">
+          </div>
+
+          <div class="input">
+            <label for="selected">8. Tìm số nguyên tố đầu tiên trong mảng </label>  
+            <input type="radio" value="8" name="selected">
+          </div>
+
+          <div class="input">
+            <label for="selected">9 Nhập thêm 1 mảng số thực, tìm xem trong mảng có bao nhiêu số nguyên </label>
+            <input type="radio" value="9" name="selected">
+          </div>
+
+
+          <div class="input">
+            <label for="selected">10. So sánh số lượng số dương và số lượng số âm xem số nào nhiều hơn </label>
+            <input type="radio" value="10" name="selected">
+          </div>
+          
+        </div>
+        
+          
+        <button type="button" id="bai1" class="btn btn-primary">Submit</button>
+        <p id="result" class="mt-3"></p>
+      </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+.input{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+form{
+    max-width: 1000px;
+}
+input[type=radio] {
+   height: 20px;
+   width: 20px;
+}
+#c6{
+    transition: all 0.5;
+}
+
+.show{
+    opacity: 1;
+    display: block;
+}
+.hide{
+    opacity: 0;
+    display: none;
+}
